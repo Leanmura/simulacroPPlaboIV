@@ -1,0 +1,8 @@
+<div *ngIf="tipo === 'Lista'; then lista"></div>
+<ng-template #lista>
+    <li *ngFor="let item of peliculas" class="h6">
+        {{item.nombre}} - {{item.tipo}} - {{item.fechaEstreno}} - {{item.cantPublico}} <img class="img-fluid"
+            src="{{item.foto}}" alt="{{item.nombre}}">
+        <button class="btn btn-primary btn-lg " type="button" (click)="seleccionarPelicula(item)">select</button>
+    </li>
+</ng-template>

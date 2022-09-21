@@ -1,0 +1,10 @@
+<h2>Solo mostrar</h2>
+
+
+<div *ngIf="peliculaSeleccionada !== undefined;">
+    <p> Nombre: {{peliculaSeleccionada.nombre}}</p>
+    <p> Genero: {{peliculaSeleccionada.tipo}}</p>
+    <p> Fecha de estreno: {{peliculaSeleccionada.fechaEstreno}}</p>
+    <p> Cantidad de publico: {{peliculaSeleccionada.cantPublico}}</p>
+    <img src="{{peliculaSeleccionada.foto}}">
+</div>
